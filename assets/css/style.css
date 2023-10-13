@@ -97,34 +97,41 @@ footer {
 
 /* Media query: tablets and larger (758px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header */
     nav {
-    display: block;
-    position: relative;
-    box-shadow: none;
-    width: fit-content;
-    padding-right: 1rem;
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 200%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    /* Main content */
+    main {
+        /* Push main content down to accomodate larger header */
+        margin-top: 79px;
+    }
 }
-#menu {
-    display: flex;
-}
-#menu > li {
-    padding: 1rem; 
-}
-.nav-toggle-label {
-    display: none;
-}
-#logo {
-    font-size: 200%;
-    line-height: 75px;
-    margin: 0 0.5rem;
-}
-/* Main content */
-main {
-    /* Push main content down to accomodate larger header */ 
-    margin-top: 79px;
-}
-}
+
 /* large devices (laptop and desktops 992px and above) */
 @media screen and (min-width: 992px) {
     #menu a:hover {
